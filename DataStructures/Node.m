@@ -12,21 +12,12 @@
 
 - (instancetype)initNodeWithData:(NSUInteger)data
 {
-    self = [super init];
-    if (self)
+    if (self = [super init])
     {
         _data = data;
     }
     
     return self;
-}
-
-- (instancetype)initNodeWithNode:(Node *)node
-{
-    self = [super init];
-    if (self) {
-        statements
-    }
 }
 
 @end

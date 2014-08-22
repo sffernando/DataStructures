@@ -10,6 +10,7 @@
 		DB9515F019A1604C00F39637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9515EF19A1604C00F39637 /* main.m */; };
 		DB9515F919A160B000F39637 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9515F819A160B000F39637 /* Node.m */; };
 		DB9515FD19A1610D00F39637 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9515FC19A1610D00F39637 /* LinkedList.m */; };
+		DBDDF0F819A6CA0000F380F8 /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDDF0F719A6CA0000F380F8 /* Printer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		DB9515F819A160B000F39637 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		DB9515FB19A1610D00F39637 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		DB9515FC19A1610D00F39637 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		DBDDF0F619A6CA0000F380F8 /* Printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
+		DBDDF0F719A6CA0000F380F8 /* Printer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Printer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				DB9515FA19A160F500F39637 /* Element */,
 				DB9515F619A1606500F39637 /* LinkedList */,
 				DB9515EF19A1604C00F39637 /* main.m */,
+				DBDDF0F619A6CA0000F380F8 /* Printer.h */,
+				DBDDF0F719A6CA0000F380F8 /* Printer.m */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBDDF0F819A6CA0000F380F8 /* Printer.m in Sources */,
 				DB9515FD19A1610D00F39637 /* LinkedList.m in Sources */,
 				DB9515F919A160B000F39637 /* Node.m in Sources */,
 				DB9515F019A1604C00F39637 /* main.m in Sources */,
@@ -260,6 +266,7 @@
 				DB9515F519A1604C00F39637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

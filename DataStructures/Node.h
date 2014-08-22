@@ -16,6 +16,4 @@
 
 - (instancetype)initNodeWithData:(NSUInteger)data;
 
-- (instancetype)initNodeWithNode:(Node *)node;
-
 @end

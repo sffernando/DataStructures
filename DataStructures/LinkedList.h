@@ -11,22 +11,44 @@
 
 @interface LinkedList : NSObject
 
-@property (nonatomic, strong) Node *head;
+/************************/
+-(NSString *)description;
+/************************/
 
 - (instancetype)initLinkedListWithNode:(Node *)node;
 
+- (instancetype)initLinkedListWithNodeData:(NSUInteger)data;
+
 - (NSUInteger)length;
 
-- (void)insert:(Node *)node after:(Node *)after;
+- (void)push:(Node *)node;
 
-- (void)insert:(Node *)node atIndex:(NSUInteger)index;
+- (Node *)pop;
 
-- (void)remove:(Node *)node;
-
-- (void)remove:(Node *)node atIndex:(NSUInteger)index;
+- (void)addAtEndNode:(Node *)node;
 
 - (Node *)nodeAtIndex:(NSUInteger)index;
 
-- (Node *)nodeDataEqualsTo:(Node *)node;
+- (void)insert:(Node *)node atIndex:(NSUInteger)index;
+
+- (void)removeNodeAtIndex:(NSUInteger)index;
+
+/*
+- (void)insertSorted:(Node *)node;
+
+- (void)appendList:(LinkedList *)list;
+
+- (LinkedList *)secondListAfterSplitAtMid;
+
+- (void)removeDuplicates;
+
+- (LinkedList *)listAfterMovingNodeFromList:(LinkedList *)list;
+
+- (LinkedList *)listAfterAlternativelySplittingList:(LinkedList *)list;
+
+- (LinkedList *)listAfterShuffleMergingList:(LinkedList *)listOne withList:(LinkedList *)listTwo;
+
+- (LinkedList *)listAfterSortedMergingList:(LinkedList *)listOne withList:(LinkedList *)listTwo;
+*/
 
 @end

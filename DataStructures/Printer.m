@@ -10,4 +10,9 @@
 
 @implementation Printer
 
++ (void)printLinkedList:(LinkedList *)list
+{
+    NSLog(@"%@", [list description]);
+}
+
 @end
