@@ -10,7 +10,7 @@
 
 @implementation Node
 
-- (instancetype)initNodeWithData:(NSUInteger)data
+- (instancetype)initNodeWithData:(id)data
 {
     if (self = [super init])
     {

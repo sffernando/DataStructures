@@ -23,7 +23,7 @@
     
     while (node)
     {
-        [description appendFormat:@"%ld -> ", node.data];
+        [description appendFormat:@"%@ -> ", node.data];
         node = node.next;
     }
     
@@ -62,7 +62,7 @@
     return self;
 }
 
-- (instancetype)initLinkedListWithNodeData:(NSUInteger)data
+- (instancetype)initLinkedListWithNodeData:(id)data
 {
     if (self = [super init])
     {

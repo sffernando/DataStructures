@@ -10,10 +10,10 @@
 
 @interface Node : NSObject
 
-@property (nonatomic) NSInteger data;
+@property (nonatomic) id data;
 
 @property (nonatomic, strong) Node *next;
 
-- (instancetype)initNodeWithData:(NSUInteger)data;
+- (instancetype)initNodeWithData:(id)data;
 
 @end

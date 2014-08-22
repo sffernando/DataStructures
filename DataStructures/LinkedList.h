@@ -17,7 +17,7 @@
 
 - (instancetype)initLinkedListWithNode:(Node *)node;
 
-- (instancetype)initLinkedListWithNodeData:(NSUInteger)data;
+- (instancetype)initLinkedListWithNodeData:(id)data;
 
 - (NSUInteger)length;
 

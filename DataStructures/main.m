@@ -13,9 +13,9 @@
 
 void RunProgram()
 {
-    Node *n1 = [[Node alloc] initNodeWithData:1];
-    Node *n2 = [[Node alloc] initNodeWithData:2];
-    Node *n3 = [[Node alloc] initNodeWithData:3];
+    Node *n1 = [[Node alloc] initNodeWithData:[NSNumber numberWithInt:1]];
+    Node *n2 = [[Node alloc] initNodeWithData:[NSNumber numberWithInt:2]];
+    Node *n3 = [[Node alloc] initNodeWithData:[NSNumber numberWithInt:3]];
     
     LinkedList *list = [[LinkedList alloc] init];
     [list push:n2];
