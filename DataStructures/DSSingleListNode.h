@@ -10,4 +10,6 @@
 
 @interface DSSingleListNode : DSNode
 
+@property (nonatomic, strong) DSSingleListNode *next;
+
 @end

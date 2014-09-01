@@ -7,35 +7,35 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Node.h"
+#import "DSSingleListNode.h"
 
-@interface LinkedList : NSObject
+@interface DSLinkedList : NSObject
 
 /************************/
 -(NSString *)description;
 /************************/
 
-- (instancetype)initLinkedListWithNode:(Node *)node;
+- (instancetype)initLinkedListWithNode:(DSSingleListNode *)node;
 
 - (instancetype)initLinkedListWithNodeData:(id)data;
 
 - (NSUInteger)length;
 
-- (void)push:(Node *)node;
+- (void)push:(DSSingleListNode *)node;
 
-- (Node *)pop;
+- (DSSingleListNode *)pop;
 
-- (void)addAtEndNode:(Node *)node;
+- (void)addAtEndNode:(DSSingleListNode *)node;
 
-- (Node *)nodeAtIndex:(NSUInteger)index;
+- (DSSingleListNode *)nodeAtIndex:(NSUInteger)index;
 
-- (void)insert:(Node *)node atIndex:(NSUInteger)index;
+- (void)insert:(DSSingleListNode *)node atIndex:(NSUInteger)index;
 
 - (void)removeNodeAtIndex:(NSUInteger)index;
 
-/*
-- (void)insertSorted:(Node *)node;
+- (void)insertSorted:(DSSingleListNode *)node;
 
+/*
 - (void)appendList:(LinkedList *)list;
 
 - (LinkedList *)secondListAfterSplitAtMid;

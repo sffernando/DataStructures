@@ -10,4 +10,8 @@
 
 @interface DSDoubleListNode : DSNode
 
+@property (nonatomic, strong) DSDoubleListNode *prev;
+
+@property (nonatomic, strong) DSDoubleListNode *next;
+
 @end

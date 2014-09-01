@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LinkedList.h"
+#import "DSLinkedList.h"
 
-@interface Printer : NSObject
+@interface DSPrinter : NSObject
 
-+ (void)printLinkedList:(LinkedList *)list;
++ (void)printLinkedList:(DSLinkedList *)list;
 
 @end

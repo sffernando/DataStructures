@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Harshad Kale. All rights reserved.
 //
 
-#import "Printer.h"
+#import "DSPrinter.h"
 
-@implementation Printer
+@implementation DSPrinter
 
-+ (void)printLinkedList:(LinkedList *)list
++ (void)printLinkedList:(DSLinkedList *)list
 {
     NSLog(@"%@", [list description]);
 }

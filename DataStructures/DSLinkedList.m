@@ -6,19 +6,19 @@
 //  Copyright (c) 2014 Harshad Kale. All rights reserved.
 //
 
-#import "LinkedList.h"
+#import "DSLinkedList.h"
 
-@interface LinkedList ()
-@property (nonatomic, strong) Node *head;
+@interface DSLinkedList ()
+@property (nonatomic, strong) DSSingleListNode *head;
 @end
 
-@implementation LinkedList
+@implementation DSLinkedList
 
 #pragma mark - <public> Overriden methods
 
 -(NSString *)description
 {
-    Node *node = _head;
+    DSSingleListNode *node = _head;
     NSMutableString *description = [NSMutableString stringWithString:@""];
     
     while (node)
@@ -34,9 +34,9 @@
 
 #pragma mark - <private> methods
 
-- (Node *)tail
+- (DSSingleListNode *)tail
 {
-    Node *indexer = _head;
+    DSSingleListNode *indexer = _head;
     
     if (!_head)
     {
@@ -52,7 +52,7 @@
 }
 
 #pragma mark - <public> methods
-- (instancetype)initLinkedListWithNode:(Node *)node
+- (instancetype)initLinkedListWithNode:(DSSingleListNode *)node
 {
     if (self = [super init])
     {
@@ -66,7 +66,7 @@
 {
     if (self = [super init])
     {
-        _head = [[Node alloc] init];
+        _head = [[DSSingleListNode alloc] init];
         _head.data = data;
         _head.next = nil;
     }
@@ -77,7 +77,7 @@
 - (NSUInteger)length
 {
     NSUInteger count = 0;
-    Node *indexer = _head;
+    DSSingleListNode *indexer = _head;
     
     if (!_head)
     {
@@ -93,32 +93,32 @@
     return count;
 }
 
-- (void)push:(Node *)node
+- (void)push:(DSSingleListNode *)node
 {
     node.next = _head;
     _head = node;
 }
 
-- (Node *)pop
+- (DSSingleListNode *)pop
 {
-    Node *popped = _head;
+    DSSingleListNode *popped = _head;
     _head = _head.next;
     
     return popped;
 }
 
-- (void)addAtEndNode:(Node *)node
+- (void)addAtEndNode:(DSSingleListNode *)node
 {
     if (node)
     {
-        Node *tail = [self tail];
+        DSSingleListNode *tail = [self tail];
         tail.next = node;
     }
 }
 
-- (Node *)nodeAtIndex:(NSUInteger)index
+- (DSSingleListNode *)nodeAtIndex:(NSUInteger)index
 {
-    Node *indexer = _head;
+    DSSingleListNode *indexer = _head;
     for (NSUInteger i = 0; i < index; i++)
     {
         if (indexer.next)
@@ -133,7 +133,7 @@
     return indexer;
 }
 
-- (void)insert:(Node *)node atIndex:(NSUInteger)index
+- (void)insert:(DSSingleListNode *)node atIndex:(NSUInteger)index
 {
     if (node)
     {
@@ -143,7 +143,7 @@
             return;
         }
         
-        Node *nodeAtIndexLessOne = [self nodeAtIndex:(index - 1)];
+        DSSingleListNode *nodeAtIndexLessOne = [self nodeAtIndex:(index - 1)];
         if (nodeAtIndexLessOne)
         {
             node.next = nodeAtIndexLessOne.next.next;
@@ -160,7 +160,7 @@
         return;
     }
     
-    Node *nodeAtIndexLessOne = [self nodeAtIndex:(index - 1)];
+    DSSingleListNode *nodeAtIndexLessOne = [self nodeAtIndex:(index - 1)];
     if (nodeAtIndexLessOne)
     {
         nodeAtIndexLessOne.next = nodeAtIndexLessOne.next.next;
@@ -169,5 +169,9 @@
 
 #pragma mark - <public> derived methods
 
+- (void)insertSorted:(DSSingleListNode *)node
+{
+    
+}
 
 @end

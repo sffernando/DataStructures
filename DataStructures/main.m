@@ -7,22 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Printer.h"
-#import "Node.h"
-#import "LinkedList.h"
+#import "DSPrinter.h"
+#import "DSNode.h"
+#import "DSLinkedList.h"
 
 void RunProgram()
 {
-    Node *n1 = [[Node alloc] initNodeWithData:[NSNumber numberWithInt:1]];
-    Node *n2 = [[Node alloc] initNodeWithData:[NSNumber numberWithInt:2]];
-    Node *n3 = [[Node alloc] initNodeWithData:[NSNumber numberWithInt:3]];
+    DSNode *n1 = [[DSNode alloc] initNodeWithData:[NSNumber numberWithInt:1]];
+    DSNode *n2 = [[DSNode alloc] initNodeWithData:[NSNumber numberWithInt:2]];
+    DSNode *n3 = [[DSNode alloc] initNodeWithData:[NSNumber numberWithInt:3]];
     
-    LinkedList *list = [[LinkedList alloc] init];
+    DSLinkedList *list = [[DSLinkedList alloc] init];
     [list push:n2];
     [list addAtEndNode:n3];
     [list insert:n1 atIndex:0];
     
-    [Printer printLinkedList:list];
+    [DSPrinter printLinkedList:list];
 }
 
 int main(int argc, const char * argv[])

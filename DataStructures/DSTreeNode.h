@@ -10,4 +10,8 @@
 
 @interface DSTreeNode : DSNode
 
+@property (nonatomic, strong) DSTreeNode *left;
+
+@property (nonatomic, strong) DSTreeNode *right;
+
 @end

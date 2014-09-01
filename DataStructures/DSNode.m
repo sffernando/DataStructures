@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Harshad Kale. All rights reserved.
 //
 
-#import "Node.h"
+#import "DSNode.h"
 
-@implementation Node
+@implementation DSNode
 
-- (instancetype)initNodeWithData:(id)data
+- (instancetype)initNodeWithData:(NSNumber *)data
 {
     if (self = [super init])
     {
