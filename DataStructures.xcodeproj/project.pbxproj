@@ -12,7 +12,7 @@
 		DB61D1A619B4E4C200A03D86 /* DSDoubleListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DB61D1A519B4E4C200A03D86 /* DSDoubleListNode.m */; };
 		DB9515F019A1604C00F39637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9515EF19A1604C00F39637 /* main.m */; };
 		DB9515F919A160B000F39637 /* DSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9515F819A160B000F39637 /* DSNode.m */; };
-		DB9515FD19A1610D00F39637 /* DSLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9515FC19A1610D00F39637 /* DSLinkedList.m */; };
+		DB9515FD19A1610D00F39637 /* DSSingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9515FC19A1610D00F39637 /* DSSingleLinkedList.m */; };
 		DBDDF0F819A6CA0000F380F8 /* DSPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDDF0F719A6CA0000F380F8 /* DSPrinter.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +39,8 @@
 		DB9515EF19A1604C00F39637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB9515F719A160B000F39637 /* DSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNode.h; sourceTree = "<group>"; };
 		DB9515F819A160B000F39637 /* DSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNode.m; sourceTree = "<group>"; };
-		DB9515FB19A1610D00F39637 /* DSLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLinkedList.h; sourceTree = "<group>"; };
-		DB9515FC19A1610D00F39637 /* DSLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLinkedList.m; sourceTree = "<group>"; };
+		DB9515FB19A1610D00F39637 /* DSSingleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSingleLinkedList.h; sourceTree = "<group>"; };
+		DB9515FC19A1610D00F39637 /* DSSingleLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSingleLinkedList.m; sourceTree = "<group>"; };
 		DBDDF0F619A6CA0000F380F8 /* DSPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPrinter.h; sourceTree = "<group>"; };
 		DBDDF0F719A6CA0000F380F8 /* DSPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPrinter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,8 +87,8 @@
 		DB9515F619A1606500F39637 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				DB9515FB19A1610D00F39637 /* DSLinkedList.h */,
-				DB9515FC19A1610D00F39637 /* DSLinkedList.m */,
+				DB9515FB19A1610D00F39637 /* DSSingleLinkedList.h */,
+				DB9515FC19A1610D00F39637 /* DSSingleLinkedList.m */,
 			);
 			name = LinkedList;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				DB61D1A319B4E49800A03D86 /* DSTreeNode.m in Sources */,
 				DB61D1A619B4E4C200A03D86 /* DSDoubleListNode.m in Sources */,
 				DBDDF0F819A6CA0000F380F8 /* DSPrinter.m in Sources */,
-				DB9515FD19A1610D00F39637 /* DSLinkedList.m in Sources */,
+				DB9515FD19A1610D00F39637 /* DSSingleLinkedList.m in Sources */,
 				DB61D1A019B4E3DC00A03D86 /* DSSingleListNode.m in Sources */,
 				DB9515F919A160B000F39637 /* DSNode.m in Sources */,
 				DB9515F019A1604C00F39637 /* main.m in Sources */,

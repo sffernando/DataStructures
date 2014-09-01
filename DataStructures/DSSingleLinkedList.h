@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DSSingleListNode.h"
 
-@interface DSLinkedList : NSObject
+@interface DSSingleLinkedList : NSObject
 
 /************************/
 -(NSString *)description;

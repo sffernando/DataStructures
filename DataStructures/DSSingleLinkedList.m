@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Harshad Kale. All rights reserved.
 //
 
-#import "DSLinkedList.h"
+#import "DSSingleLinkedList.h"
 
-@interface DSLinkedList ()
+@interface DSSingleLinkedList ()
 @property (nonatomic, strong) DSSingleListNode *head;
 @end
 
-@implementation DSLinkedList
+@implementation DSSingleLinkedList
 
 #pragma mark - <public> Overriden methods
 

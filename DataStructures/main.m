@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DSPrinter.h"
 #import "DSNode.h"
-#import "DSLinkedList.h"
+#import "DSSingleLinkedList.h"
 
 void RunProgram()
 {
@@ -17,7 +17,7 @@ void RunProgram()
     DSNode *n2 = [[DSNode alloc] initNodeWithData:[NSNumber numberWithInt:2]];
     DSNode *n3 = [[DSNode alloc] initNodeWithData:[NSNumber numberWithInt:3]];
     
-    DSLinkedList *list = [[DSLinkedList alloc] init];
+    DSSingleLinkedList *list = [[DSSingleLinkedList alloc] init];
     [list push:n2];
     [list addAtEndNode:n3];
     [list insert:n1 atIndex:0];

@@ -10,7 +10,7 @@
 
 @implementation DSPrinter
 
-+ (void)printLinkedList:(DSLinkedList *)list
++ (void)printLinkedList:(DSSingleLinkedList *)list
 {
     NSLog(@"%@", [list description]);
 }
